@@ -1,0 +1,28 @@
+@use "../Partials/mixins";
+@use "../Partials/palette";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 35px;
+  a {
+    text-decoration: none;
+  }
+
+	&__header {
+		font-weight: normal;
+		font-size: 1em;
+    color: palette.$dark-primary;
+	}
+
+  &__links {
+    a {
+      color: palette.$dark-secondary;
+      padding: 0px 10px;
+    }
+    a:hover {
+      color: palette.$dark-primary;
+    }
+  }
+}

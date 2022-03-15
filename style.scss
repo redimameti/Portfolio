@@ -1,0 +1,158 @@
+@use "./Modules/projects";
+@use "./Modules/nav";
+@use "./Partials/mixins";
+@use "./Partials/palette";
+
+::selection {
+	background-color: palette.$accent;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: palette.$light;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: palette.$scrollbar;
+}
+* {
+	color: palette.$dark-primary;
+}
+
+body {
+	font-family: "Manrope", sans-serif;
+	background-color: palette.$light;
+}
+
+.divider {
+	border-bottom: solid 0.5px palette.$divider;
+	margin: 70px 35px;
+}
+
+.title-container {
+	display: flex;
+	float: left;
+	padding: 0px;
+
+	* {
+		color: palette.$dark-secondary;
+	}
+}
+
+.section-number {
+	font-family: "Roboto Mono", monospace;
+	font-size: 0.8em;
+	// padding: 0px 5px 5px 0px;
+}
+
+.section-header {
+	font-weight: normal;
+	font-size: 1em;
+	padding: 35px;
+	margin: 0px;
+}
+
+.intro {
+	padding: 0px 35px;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+
+	h2 {
+		padding: 0px;
+		margin: 0px;
+		font-weight: normal;
+		font-size: 9vw;
+	}
+}
+
+#about {
+	padding: 35px;
+
+	h3 {
+		padding: 5px 0px 0px 5px;
+		margin: 0px 20px 0px 0px;
+	}
+
+	p {
+		font-size: 2em;
+		margin: 0px;
+	}
+}
+
+#skillsContactContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+
+	.title-container {
+		padding: 0px 35px;
+	}
+
+	h3 {
+		padding: 5px 0px 0px 5px;
+		margin: 0px 20px 0px 0px;
+	}
+
+	.skills-container {
+		width: 50%;
+		min-width: 350px;
+		display: flex;
+		flex-direction: column;
+
+		&__icons-container {
+			padding: 35px;
+			display: flex;
+			justify-content: center;
+
+			// max-width: 80%;
+			// &__main {
+			// 	display: flex;
+			// 	justify-content: space-around;
+
+			// 	background-color: pink;
+			// }
+		}
+	}
+
+	.icons-container {
+		&__main {
+			width: 95%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-evenly;
+		}
+	}
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	min-width: 350px;
+
+	&__inner {
+		width: 95%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.divider:last-of-type {
+	margin-bottom: 35px;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 35px;
+	margin-bottom: 35px;
+}
