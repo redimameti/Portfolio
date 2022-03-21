@@ -9,6 +9,7 @@
 
 ::-webkit-scrollbar {
 	width: 10px;
+	height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -18,6 +19,11 @@
 ::-webkit-scrollbar-thumb {
 	background-color: palette.$accent2;
 }
+
+::-webkit-scrollbar-thumb:active {
+	background-color: palette.$accent2-hover;
+}
+
 * {
 	color: palette.$dark-primary;
 }
@@ -25,6 +31,20 @@
 body {
 	font-family: "Manrope", sans-serif;
 	background-color: palette.$light;
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+	padding: 0px;
+}
+// @media only screen and (max-width: 850px) {
+// 	body {
+// 		justify-content: center;
+// 	}
+// }
+.centered-wrapper {
+	max-width: 1920px;
+	margin: 0px;
+	padding: 0px;
 }
 
 .divider {
@@ -69,7 +89,12 @@ body {
 		padding: 0px;
 		margin: 0px;
 		font-weight: normal;
-		font-size: 9vw;
+		@media only screen and (max-width: 1920px) {
+			font-size: 9vw;
+		}
+		@media only screen and (min-width: 1921px) {
+			font-size: 172.8px;
+		}
 	}
 }
 
@@ -82,8 +107,16 @@ body {
 	}
 
 	p {
-		font-size: 2em;
 		margin: 0px;
+		@media only screen and (max-width: 420px) {
+			font-size: 1em;
+		}
+		@media only screen and (min-width: 421px) {
+			font-size: 1.5em;
+		}
+		@media only screen and (min-width: 750px) {
+			font-size: 2em;
+		}
 	}
 }
 
@@ -93,7 +126,6 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	min-height: 35vh;
 
 	.title-container {
 		padding: 0px 35px;
@@ -106,7 +138,6 @@ body {
 
 	.skills-container {
 		width: 50%;
-		min-width: 350px;
 		display: flex;
 		flex-direction: column;
 
@@ -137,14 +168,13 @@ body {
 }
 
 .fa-brands {
-	padding: 10px;
+	padding: 15px;
 }
 
 .contact-container {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	min-width: 350px;
 
 	#contactTitle {
 		padding: 0px;
@@ -157,7 +187,8 @@ body {
 		justify-content: space-between;
 
 		&__message {
-			padding: 35px 0px;
+			padding: 35px 35px 35px 0px;
+			max-width: 100%;
 
 			&__email {
 				text-decoration: underline;
@@ -170,6 +201,32 @@ body {
 			justify-content: space-between;
 			flex-wrap: nowrap;
 		}
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#skillsContactContainer {
+		flex-direction: column;
+		// justify-content: flex-start;
+	}
+
+	#skillsContactContainer > div {
+		max-width: 100%;
+	}
+
+	.skills-container {
+		min-width: 100%;
+	}
+	.contact-container {
+		width: 100%;
+		padding: 70px 35px 0px 35px;
+	}
+}
+
+.icons-container {
+	&__main {
+		min-width: 100%;
+		justify-content: space-between;
 	}
 }
 

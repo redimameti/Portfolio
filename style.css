@@ -14,6 +14,7 @@
 .projects-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .projects-container__project-card {
@@ -59,6 +60,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 35px;
 }
 .navbar a {
@@ -69,18 +71,61 @@
   font-size: 1em;
   color: #151515;
 }
+.navbar__links {
+  display: flex;
+  align-items: center;
+}
 .navbar__links a {
   color: #515151;
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 .navbar__links a:hover {
   color: #151515;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 850px) {
   .navbar__links {
     display: none;
   }
+}
+.hamburger-btn {
+  display: flex;
+  height: 20px;
+  width: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 850px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+.hamburger-btn__line {
+  height: 2px;
+  width: 100%;
+  background-color: #515151;
+}
+
+.hamburger-btn:hover * {
+  background-color: #151515;
+}
+
+.hamburger-btn-open {
+  display: flex;
+  height: 20px;
+  width: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 850px) {
+  .hamburger-btn-open {
+    display: none;
+  }
+}
+.hamburger-btn-open__line {
+  height: 2px;
+  width: 100%;
+  background-color: #515151;
 }
 ::selection {
   background-color: #d4ff00;
@@ -88,6 +133,7 @@
 
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -98,6 +144,10 @@
   background-color: #163bff;
 }
 
+::-webkit-scrollbar-thumb:active {
+  background-color: #5975ff;
+}
+
 * {
   color: #151515;
 }
@@ -105,6 +155,16 @@
 body {
   font-family: "Manrope", sans-serif;
   background-color: #f0f1f2;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.centered-wrapper {
+  max-width: 1920px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .divider {
@@ -147,7 +207,16 @@ body {
   padding: 0px;
   margin: 0px;
   font-weight: normal;
-  font-size: 9vw;
+}
+@media only screen and (max-width: 1920px) {
+  .intro h2 {
+    font-size: 9vw;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  .intro h2 {
+    font-size: 172.8px;
+  }
 }
 
 #about {
@@ -158,8 +227,22 @@ body {
   margin: 0px 20px 0px 0px;
 }
 #about p {
-  font-size: 2em;
   margin: 0px;
+}
+@media only screen and (max-width: 420px) {
+  #about p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 421px) {
+  #about p {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 750px) {
+  #about p {
+    font-size: 2em;
+  }
 }
 
 #skillsContactContainer {
@@ -168,7 +251,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  min-height: 35vh;
 }
 #skillsContactContainer .title-container {
   padding: 0px 35px;
@@ -179,7 +261,6 @@ body {
 }
 #skillsContactContainer .skills-container {
   width: 50%;
-  min-width: 350px;
   display: flex;
   flex-direction: column;
 }
@@ -197,14 +278,13 @@ body {
 }
 
 .fa-brands {
-  padding: 10px;
+  padding: 15px;
 }
 
 .contact-container {
   display: flex;
   flex-direction: column;
   width: 50%;
-  min-width: 350px;
 }
 .contact-container #contactTitle {
   padding: 0px;
@@ -216,7 +296,8 @@ body {
   justify-content: space-between;
 }
 .contact-container__inner__message {
-  padding: 35px 0px;
+  padding: 35px 35px 35px 0px;
+  max-width: 100%;
 }
 .contact-container__inner__message__email {
   text-decoration: underline;
@@ -226,6 +307,29 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 850px) {
+  #skillsContactContainer {
+    flex-direction: column;
+  }
+
+  #skillsContactContainer > div {
+    max-width: 100%;
+  }
+
+  .skills-container {
+    min-width: 100%;
+  }
+
+  .contact-container {
+    width: 100%;
+    padding: 70px 35px 0px 35px;
+  }
+}
+.icons-container__main {
+  min-width: 100%;
+  justify-content: space-between;
 }
 
 .social-link {

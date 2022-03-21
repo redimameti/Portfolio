@@ -19,291 +19,353 @@
 		<script src="app.js"></script>
 	</head>
 	<body>
-		<!-- Nav -->
-		<nav class="navbar">
-			<a href="#"><h1 class="navbar__header">Redim Ameti</h1></a>
-			<div class="navbar__links">
-				<a href="#about">About</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>
+		<div class="centered-wrapper">
+			<!-- Nav -->
+			<nav class="navbar">
+				<a href="#"><h1 class="navbar__header">Redim Ameti</h1></a>
+				<a href="#" class="hamburger-btn collapsed">
+					<div class="hamburger-btn__line"></div>
+					<div class="hamburger-btn__line"></div>
+					<div class="hamburger-btn__line"></div>
+				</a>
+				<!-- <a href="#" class="hamburger-btn-open">
+					<div class="hamburger-btn__line line-1"></div>
+					<div class="hamburger-btn__line line-2"></div>
+				</a> -->
+				<div class="navbar__links menu">
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</nav>
+
+			<!-- Intro -->
+			<div class="intro">
+				<h2>I'm Redim,</h2>
+				<h2>a web developer</h2>
+				<h2>based in Melbourne 🌏</h2>
 			</div>
-		</nav>
 
-		<!-- Intro -->
-		<div class="intro">
-			<h2>I'm Redim,</h2>
-			<h2>a web developer</h2>
-			<h2>based in Melbourne 🌏</h2>
-		</div>
+			<!-- Divider -->
+			<div class="divider"></div>
 
-		<!-- Divider -->
-		<div class="divider"></div>
-
-		<!-- About -->
-		<div id="about">
-			<div class="title-container">
-				<span class="section-number">01</span>
-				<h3 class="section-header">About</h3>
-			</div>
-			<p>
-				Redim is a Junior Developer in training over at
-				<a target="_blank" href="#" class="copy">_nology</a>. He enjoys
-				making unique and seamless web experiences for
-				<span class="crossed-out">users</span> people. He has a
-				background in finance, with previous experience in corporate
-				banking - also, I haven't a clue why he's written this in third
-				person 🤔… In my spare time, I love immersing myself in the
-				making and appreciating of music. If you want to listen to some
-				music I've made while scrolling, click
-				<a
-					class="copy"
-					target="_blank"
-					href="https://soundcloud.com/redim-music/the-narrows"
-					>here</a
-				>
-				🎹
-			</p>
-		</div>
-
-		<!-- Divider -->
-		<div class="divider"></div>
-
-		<!-- Projects -->
-		<div id="projects">
-			<div class="title-container">
-				<span class="section-number">02</span>
-				<h3 class="section-header">Selected works</h3>
-			</div>
-			<div class="projects-container">
-				<div class="projects-container__project-card">
-					<h4 class="projects-container__project-card__header">
-						Productivity Suite
-					</h4>
-					<!-- add chips here for different skills used in the project -->
-					<ul class="project-card__list">
-						<li>
-							<span>HTTP: </span><a href="#">greatestapp.io</a> ↗
-						</li>
-						<li>
-							<span>Git: </span
-							><a href="#">greatestapp.github.io</a> ↗
-						</li>
-						<li>March, 2022</li>
-						<li>
-							<span>Project: </span>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing
-							elit. Aenean commodo ligula eget dolor. Aenean
-							massa. Cum sociis natoque.
-						</li>
-					</ul>
-					<img
-						src="https://www.placecage.com/200/150"
-						alt="placeholder"
-					/>
-				</div>
-
-				<div class="projects-container__project-card">
-					<h4 class="projects-container__project-card__header">
-						Bug tracker
-					</h4>
-					<!-- add chips here for different skills used in the project -->
-					<ul class="project-card__list">
-						<li>
-							<span>HTTP: </span><a href="#">greatestapp.io</a> ↗
-						</li>
-						<li>
-							<span>Git: </span
-							><a href="#">greatestapp.github.io</a> ↗
-						</li>
-						<li>March, 2022</li>
-						<li>
-							<span>Project: </span>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing
-							elit. Aenean commodo ligula eget dolor. Aenean
-							massa. Cum sociis natoque.
-						</li>
-					</ul>
-					<img
-						src="https://www.placecage.com/200/150"
-						alt="placeholder"
-					/>
-				</div>
-
-				<div class="projects-container__project-card">
-					<h4 class="projects-container__project-card__header">
-						Crypto Chess
-					</h4>
-					<!-- add chips here for different skills used in the project -->
-					<ul class="project-card__list">
-						<li>
-							<span>HTTP: </span><a href="#">greatestapp.io</a> ↗
-						</li>
-						<li>
-							<span>Git: </span
-							><a href="#">greatestapp.github.io</a> ↗
-						</li>
-						<li>March, 2022</li>
-						<li>
-							<span>Project: </span>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing
-							elit. Aenean commodo ligula eget dolor. Aenean
-							massa. Cum sociis natoque.
-						</li>
-					</ul>
-					<img
-						src="https://www.placecage.com/200/150"
-						alt="placeholder"
-					/>
-				</div>
-
-				<div class="projects-container__project-card">
-					<h4 class="projects-container__project-card__header">
-						Placeholder text
-					</h4>
-					<!-- add chips here for different skills used in the project -->
-					<ul class="project-card__list">
-						<li>
-							<span>HTTP: </span><a href="#">greatestapp.io</a> ↗
-						</li>
-						<li>
-							<span>Git: </span
-							><a href="#">greatestapp.github.io</a> ↗
-						</li>
-						<li>March, 2022</li>
-						<li>
-							<span>Project: </span>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing
-							elit. Aenean commodo ligula eget dolor. Aenean
-							massa. Cum sociis natoque.
-						</li>
-					</ul>
-					<img
-						src="https://www.placecage.com/200/150"
-						alt="placeholder"
-					/>
-				</div>
-
-				<div class="projects-container__project-card">
-					<h4 class="projects-container__project-card__header">
-						Placeholder text
-					</h4>
-					<!-- add chips here for different skills used in the project -->
-					<ul class="project-card__list">
-						<li>
-							<span>HTTP: </span><a href="#">greatestapp.io</a> ↗
-						</li>
-						<li>
-							<span>Git: </span
-							><a href="#">greatestapp.github.io</a> ↗
-						</li>
-						<li>March, 2022</li>
-						<li>
-							<span>Project: </span>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing
-							elit. Aenean commodo ligula eget dolor. Aenean
-							massa. Cum sociis natoque.
-						</li>
-					</ul>
-					<img
-						src="https://www.placecage.com/200/150"
-						alt="placeholder"
-					/>
-				</div>
-			</div>
-		</div>
-
-		<!-- Divider -->
-		<div class="divider"></div>
-
-		<!-- Skills & Contact -->
-		<div id="skillsContactContainer">
-			<!-- Skills -->
-			<div class="skills-container">
+			<!-- About -->
+			<div id="about">
 				<div class="title-container">
-					<span class="section-number">03</span>
-					<h3 class="section-header">Skills</h3>
+					<span class="section-number">01</span>
+					<h3 class="section-header">About</h3>
 				</div>
-				<div class="skills-container__icons-container icons-container">
-					<div class="icons-container__main">
-						<i class="fa-brands fa-5x fa-html5"></i>
-						<i class="fa-brands fa-5x fa-css3-alt"></i>
-						<i class="fa-brands fa-5x fa-js"></i>
-						<i class="fa-brands fa-5x fa-react"></i>
-						<i class="fa-brands fa-5x fa-java"></i>
-						<i class="fa-brands fa-5x fa-aws"></i>
-						<i class="fa-brands fa-5x fa-sass"></i>
-						<i class="fa-brands fa-5x fa-bootstrap"></i>
-						<!-- <img
+				<p>
+					Redim is a Junior Developer in training over at
+					<a target="_blank" href="#" class="copy">_nology</a>.
+				</p>
+				<br />
+				<p>
+					He enjoys making unique and seamless web experiences for
+					<span class="crossed-out">users</span> people.
+				</p>
+				<br />
+				<p>
+					He has a background in finance, with previous experience in
+					corporate banking.
+				</p>
+				<br />
+				<p>He isn't sure why I'm speaking in third person 🤔…</p>
+				<br />
+				<p>
+					In my spare time, I love immersing myself in the making and
+					appreciating of music. If you want to listen to some music
+					I've made while scrolling, click
+					<a
+						class="copy"
+						target="_blank"
+						href="https://soundcloud.com/redim-music/the-narrows"
+						>here</a
+					>
+					🎹.
+				</p>
+			</div>
+
+			<!-- Divider -->
+			<div class="divider"></div>
+
+			<!-- Projects -->
+			<div id="projects">
+				<div class="title-container">
+					<span class="section-number">02</span>
+					<h3 class="section-header">Selected works</h3>
+				</div>
+				
+				<div class="projects-container">
+					<div class="projects-container__project-card">
+						<h4 class="projects-container__project-card__header">
+							Productivity Suite
+						</h4>
+						<!-- add chips here for different skills used in the project -->
+						<ul class="project-card__list">
+							<li>
+								<span>HTTP: </span
+								><a href="#">greatestapp.io</a> ↗
+							</li>
+							<li>
+								<span>Git: </span
+								><a href="#">greatestapp.github.io</a> ↗
+							</li>
+							<li>March, 2022</li>
+							<li>
+								<span>Project: </span>
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit. Aenean commodo ligula eget
+								dolor. Aenean massa. Cum sociis natoque.
+							</li>
+						</ul>
+						<img
+							src="https://www.placecage.com/200/150"
+							alt="placeholder"
+						/>
+					</div>
+
+					<div class="projects-container__project-card">
+						<h4 class="projects-container__project-card__header">
+							Bug tracker
+						</h4>
+						<!-- add chips here for different skills used in the project -->
+						<ul class="project-card__list">
+							<li>
+								<span>HTTP: </span
+								><a href="#">greatestapp.io</a> ↗
+							</li>
+							<li>
+								<span>Git: </span
+								><a href="#">greatestapp.github.io</a> ↗
+							</li>
+							<li>March, 2022</li>
+							<li>
+								<span>Project: </span>
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit. Aenean commodo ligula eget
+								dolor. Aenean massa. Cum sociis natoque.
+							</li>
+						</ul>
+						<img
+							src="https://www.placecage.com/200/150"
+							alt="placeholder"
+						/>
+					</div>
+
+					<div class="projects-container__project-card">
+						<h4 class="projects-container__project-card__header">
+							Crypto Chess
+						</h4>
+						<!-- add chips here for different skills used in the project -->
+						<ul class="project-card__list">
+							<li>
+								<span>HTTP: </span
+								><a href="#">greatestapp.io</a> ↗
+							</li>
+							<li>
+								<span>Git: </span
+								><a href="#">greatestapp.github.io</a> ↗
+							</li>
+							<li>March, 2022</li>
+							<li>
+								<span>Project: </span>
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit. Aenean commodo ligula eget
+								dolor. Aenean massa. Cum sociis natoque.
+							</li>
+						</ul>
+						<img
+							src="https://www.placecage.com/200/150"
+							alt="placeholder"
+						/>
+					</div>
+
+					<div class="projects-container__project-card">
+						<h4 class="projects-container__project-card__header">
+							Placeholder text
+						</h4>
+						<!-- add chips here for different skills used in the project -->
+						<ul class="project-card__list">
+							<li>
+								<span>HTTP: </span
+								><a href="#">greatestapp.io</a> ↗
+							</li>
+							<li>
+								<span>Git: </span
+								><a href="#">greatestapp.github.io</a> ↗
+							</li>
+							<li>March, 2022</li>
+							<li>
+								<span>Project: </span>
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit. Aenean commodo ligula eget
+								dolor. Aenean massa. Cum sociis natoque.
+							</li>
+						</ul>
+						<img
+							src="https://www.placecage.com/200/150"
+							alt="placeholder"
+						/>
+					</div>
+
+					<div class="projects-container__project-card">
+						<h4 class="projects-container__project-card__header">
+							Placeholder text
+						</h4>
+						<!-- add chips here for different skills used in the project -->
+						<ul class="project-card__list">
+							<li>
+								<span>HTTP: </span
+								><a href="#">greatestapp.io</a> ↗
+							</li>
+							<li>
+								<span>Git: </span
+								><a href="#">greatestapp.github.io</a> ↗
+							</li>
+							<li>March, 2022</li>
+							<li>
+								<span>Project: </span>
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit. Aenean commodo ligula eget
+								dolor. Aenean massa. Cum sociis natoque.
+							</li>
+						</ul>
+						<img
+							src="https://www.placecage.com/200/150"
+							alt="placeholder"
+						/>
+					</div>
+
+					<div class="projects-container__project-card">
+						<h4 class="projects-container__project-card__header">
+							Placeholder text
+						</h4>
+						<!-- add chips here for different skills used in the project -->
+						<ul class="project-card__list">
+							<li>
+								<span>HTTP: </span
+								><a href="#">greatestapp.io</a> ↗
+							</li>
+							<li>
+								<span>Git: </span
+								><a href="#">greatestapp.github.io</a> ↗
+							</li>
+							<li>March, 2022</li>
+							<li>
+								<span>Project: </span>
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit. Aenean commodo ligula eget
+								dolor. Aenean massa. Cum sociis natoque.
+							</li>
+						</ul>
+						<img
+							src="https://www.placecage.com/200/150"
+							alt="placeholder"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!-- Divider -->
+			<div class="divider"></div>
+
+			<!-- Skills & Contact -->
+			<div id="skillsContactContainer">
+				<!-- Skills -->
+				<div class="skills-container">
+					<div class="title-container">
+						<span class="section-number">03</span>
+						<h3 class="section-header">Skills & Tech</h3>
+					</div>
+					<div
+						class="skills-container__icons-container icons-container"
+					>
+						<div class="icons-container__main">
+							<i class="fa-brands fa-4x fa-html5"></i>
+							<i class="fa-brands fa-4x fa-css3-alt"></i>
+							<i class="fa-brands fa-4x fa-js"></i>
+							<i class="fa-brands fa-4x fa-react"></i>
+							<i class="fa-brands fa-4x fa-java"></i>
+							<i class="fa-brands fa-4x fa-aws"></i>
+							<i class="fa-brands fa-4x fa-sass"></i>
+							<i class="fa-brands fa-4x fa-bootstrap"></i>
+							<!-- <img
 							class="icon"
 							src="https://icon-library.com/images/image-placeholder-icon/image-placeholder-icon-9.jpg"
 							alt="placeholder"
 						/> -->
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<!-- Contact -->
-			<div id="contact" class="contact-container">
-				<div class="title-container" id="contactTitle">
-					<span class="section-number">04</span>
-					<h3 class="section-header">Let's chat</h3>
-				</div>
-				<div class="contact-container__inner">
-					<span class="contact-container__inner__message">
-						If you want to get in touch for business enquiries or
-						just to chat, email me at
-						<span class="copy">
-							<span
-								onclick="copyToClipboard()"
-								id="emailAddress"
-								class="contact-container__inner__message__email"
-							>
-								redimameti@gmail.com</span
-							>
-							<i
-								onclick="copyToClipboard()"
-								class="fa-regular fa-copy"
-							></i>
+				<!-- Contact -->
+				<div id="contact" class="contact-container">
+					<div class="title-container" id="contactTitle">
+						<span class="section-number">04</span>
+						<h3 class="section-header">Let's chat</h3>
+					</div>
+					<div class="contact-container__inner">
+						<span class="contact-container__inner__message">
+							If you want to get in touch for business enquiries
+							or just to chat, email me at
+							<span class="copy">
+								<span
+									onclick="copyToClipboard()"
+									id="emailAddress"
+									class="contact-container__inner__message__email"
+								>
+									redimameti@gmail.com</span
+								>
+								<i
+									onclick="copyToClipboard()"
+									class="fa-regular fa-copy"
+								></i>
+							</span>
+
+							or check out my social links below.
 						</span>
-
-						or check out my social links below.
-					</span>
-					<div class="contact-container__inner__socials">
-						<a
-							target="_blank"
-							href="https://www.linkedin.com/in/redimameti/"
-							><i
-								class="social-link fa-brands fa-3x fa-github"
-							></i
-						></a>
-						<a
-							target="_blank"
-							href="https://www.linkedin.com/in/redimameti/"
-							><i
-								class="social-link fa-brands fa-3x fa-linkedin"
-							></i
-						></a>
-						<a
-							target="_blank"
-							href="https://www.linkedin.com/in/redimameti/"
-							><i
-								class="social-link fa-brands fa-3x fa-twitter-square"
-							></i
-						></a>
+						<div class="contact-container__inner__socials">
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/in/redimameti/"
+								><i
+									class="social-link fa-brands fa-3x fa-github"
+								></i
+							></a>
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/in/redimameti/"
+								><i
+									class="social-link fa-brands fa-3x fa-linkedin"
+								></i
+							></a>
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/in/redimameti/"
+								><i
+									class="social-link fa-brands fa-3x fa-twitter-square"
+								></i
+							></a>
+						</div>
 					</div>
 				</div>
 			</div>
+
+			<!-- Divider -->
+			<div class="divider"></div>
+
+			<footer>
+				<span>Built by Redim Ameti</span>
+				<span>redim.io</span>
+			</footer>
 		</div>
-
-		<!-- Divider -->
-		<div class="divider"></div>
-
-		<footer>
-			<span>Built by Redim Ameti</span>
-			<span>redim.io</span>
-		</footer>
 	</body>
 </html>
+
+<!-- new to-dos -->
+<!-- make navbar/header always stay at top and blur into the next section -->
+<!-- make background of page blue or black when scrolling past viewport -->
 
 <!-- Short term To-do -->
 <!-- Make it fully responsive -->
