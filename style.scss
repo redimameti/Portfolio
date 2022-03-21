@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: palette.$scrollbar;
+	background-color: palette.$accent2;
 }
 * {
 	color: palette.$dark-primary;
@@ -30,6 +30,10 @@ body {
 .divider {
 	border-bottom: solid 0.5px palette.$divider;
 	margin: 70px 35px;
+}
+
+.crossed-out {
+	text-decoration: line-through;
 }
 
 .title-container {
@@ -89,6 +93,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
+	min-height: 35vh;
 
 	.title-container {
 		padding: 0px 35px;
@@ -125,10 +130,14 @@ body {
 			width: 95%;
 			display: flex;
 			flex-direction: row;
-			flex-wrap: nowrap;
+			flex-wrap: wrap;
 			justify-content: space-evenly;
 		}
 	}
+}
+
+.fa-brands {
+	padding: 10px;
 }
 
 .contact-container {
@@ -137,12 +146,56 @@ body {
 	width: 50%;
 	min-width: 350px;
 
+	#contactTitle {
+		padding: 0px;
+	}
+
 	&__inner {
 		width: 95%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
+
+		&__message {
+			padding: 35px 0px;
+
+			&__email {
+				text-decoration: underline;
+			}
+		}
+
+		&__socials {
+			width: 175px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+		}
 	}
+}
+
+.social-link {
+	padding: 0px;
+}
+.social-link:hover {
+	color: palette.$dark-secondary;
+}
+
+.copy {
+	color: palette.$accent2;
+}
+
+.copy:hover {
+	color: palette.$accent2-hover;
+	cursor: pointer;
+}
+
+.copy * {
+	color: palette.$accent2;
+}
+
+.copy *:hover {
+	color: palette.$accent2-hover;
+	cursor: pointer;
 }
 
 .divider:last-of-type {

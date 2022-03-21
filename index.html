@@ -16,6 +16,7 @@
 			src="https://kit.fontawesome.com/74d1315fc0.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<!-- Nav -->
@@ -45,12 +46,22 @@
 				<h3 class="section-header">About</h3>
 			</div>
 			<p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-				commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-				penatibus et magnis dis parturient montes, nascetur ridiculus
-				mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-				quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-				fringilla vel.
+				Redim is a Junior Developer in training over at
+				<a target="_blank" href="#" class="copy">_nology</a>. He enjoys
+				making unique and seamless web experiences for
+				<span class="crossed-out">users</span> people. He has a
+				background in finance, with previous experience in corporate
+				banking - also, I haven't a clue why he's written this in third
+				person 🤔… In my spare time, I love immersing myself in the
+				making and appreciating of music. If you want to listen to some
+				music I've made while scrolling, click
+				<a
+					class="copy"
+					target="_blank"
+					href="https://soundcloud.com/redim-music/the-narrows"
+					>here</a
+				>
+				🎹
 			</p>
 		</div>
 
@@ -214,14 +225,14 @@
 				</div>
 				<div class="skills-container__icons-container icons-container">
 					<div class="icons-container__main">
-						<i class="fa-brands fa-2xl fa-html5"></i>
-						<i class="fa-brands fa-2xl fa-css3-alt"></i>
-						<i class="fa-brands fa-2xl fa-js"></i>
-						<i class="fa-brands fa-2xl fa-react"></i>
-						<i class="fa-brands fa-2xl fa-java"></i>
-						<i class="fa-brands fa-2xl fa-aws"></i>
-						<i class="fa-brands fa-2xl fa-sass"></i>
-						<i class="fa-brands fa-2xl fa-bootstrap"></i>
+						<i class="fa-brands fa-5x fa-html5"></i>
+						<i class="fa-brands fa-5x fa-css3-alt"></i>
+						<i class="fa-brands fa-5x fa-js"></i>
+						<i class="fa-brands fa-5x fa-react"></i>
+						<i class="fa-brands fa-5x fa-java"></i>
+						<i class="fa-brands fa-5x fa-aws"></i>
+						<i class="fa-brands fa-5x fa-sass"></i>
+						<i class="fa-brands fa-5x fa-bootstrap"></i>
 						<!-- <img
 							class="icon"
 							src="https://icon-library.com/images/image-placeholder-icon/image-placeholder-icon-9.jpg"
@@ -233,16 +244,52 @@
 
 			<!-- Contact -->
 			<div id="contact" class="contact-container">
-				<div class="title-container">
+				<div class="title-container" id="contactTitle">
 					<span class="section-number">04</span>
 					<h3 class="section-header">Let's chat</h3>
 				</div>
 				<div class="contact-container__inner">
-					<i class="fa-solid fa-2xl fa-envelope"></i>
+					<span class="contact-container__inner__message">
+						If you want to get in touch for business enquiries or
+						just to chat, email me at
+						<span class="copy">
+							<span
+								onclick="copyToClipboard()"
+								id="emailAddress"
+								class="contact-container__inner__message__email"
+							>
+								redimameti@gmail.com</span
+							>
+							<i
+								onclick="copyToClipboard()"
+								class="fa-regular fa-copy"
+							></i>
+						</span>
+
+						or check out my social links below.
+					</span>
 					<div class="contact-container__inner__socials">
-						<i class="fa-brands fa-2xl fa-github"></i>
-						<i class="fa-brands fa-2xl fa-linkedin"></i>
-						<i class="fa-brands fa-2xl fa-twitter-square"></i>
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/redimameti/"
+							><i
+								class="social-link fa-brands fa-3x fa-github"
+							></i
+						></a>
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/redimameti/"
+							><i
+								class="social-link fa-brands fa-3x fa-linkedin"
+							></i
+						></a>
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/redimameti/"
+							><i
+								class="social-link fa-brands fa-3x fa-twitter-square"
+							></i
+						></a>
 					</div>
 				</div>
 			</div>
@@ -260,7 +307,6 @@
 
 <!-- Short term To-do -->
 <!-- Make it fully responsive -->
-<!-- Add a proper about me page with a 'view more' button on home section, this page will have a portrait of me -->
 <!-- Move social links to the bottom and make 'Let's chat' section one big email link -->
 <!-- Add chips to projects to indicate what technologies/skills were used -->
 
